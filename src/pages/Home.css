@@ -1,0 +1,220 @@
+.hero {
+  background: var(--navy);
+  padding: 96px 0;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  color: var(--white);
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  max-width: 46ch;
+  margin-bottom: 32px;
+}
+
+.hero-actions { display: flex; gap: 16px; }
+
+.hero-panel {
+  background: var(--navy-dark);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 28px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.9rem;
+}
+
+.hero-panel-line {
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 14px;
+}
+.hero-panel-line span { color: var(--emerald-light); margin-right: 8px; }
+.hero-panel-line em { color: var(--emerald-light); font-style: normal; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.service-item {
+  border-left: 3px solid var(--emerald);
+  padding: 4px 0 4px 20px;
+}
+.service-item h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.service-item p { color: var(--steel); font-size: 0.92rem; }
+
+.section-alt { background: var(--white); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.view-all { margin-top: 36px; }
+
+.cta {
+  background: var(--emerald);
+  padding: 64px 0;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.cta h2 { color: var(--white); font-size: 1.6rem; }
+.cta .btn-primary { background: var(--navy); }
+.cta .btn-primary:hover { background: var(--navy-dark); }
+
+@media (max-width: 860px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: 2rem; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+.stats-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 0;
+}
+
+.stats-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-value {
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--steel);
+}
+
+@media (max-width: 600px) {
+  .stats-inner { flex-direction: column; gap: 20px; }
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  border-left: 3px solid var(--emerald);
+  background: var(--white);
+  padding: 28px;
+}
+
+.testimonial-quote {
+  font-size: 1.02rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.testimonial-role {
+  color: var(--steel);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+.logos-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+}
+
+.logos-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  height: 32px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.client-logo:hover { opacity: 1; }
+
+.testimonial-card {
+  border-left: none;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  padding: 28px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 24px rgba(11, 30, 51, 0.08);
+  transform: translateY(-2px);
+}
+
+.service-item {
+  border-left: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  background: var(--white);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.service-item:hover {
+  box-shadow: 0 8px 24px rgba(11, 30, 51, 0.08);
+  transform: translateY(-2px);
+}
+
+.hero-panel {
+  background: var(--navy-dark);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 28px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.9rem;
+}

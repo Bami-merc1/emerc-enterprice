@@ -1,0 +1,16 @@
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 96px 0;
+}
+
+.not-found h1 {
+  font-size: 2.2rem;
+  margin: 12px 0 16px;
+}
+
+.not-found p {
+  color: var(--steel);
+  margin-bottom: 28px;
+}

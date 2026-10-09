@@ -1,0 +1,31 @@
+.page-header {
+  background: var(--navy);
+  padding: 72px 0;
+}
+.page-header h1 {
+  color: var(--white);
+  font-size: 2.1rem;
+  max-width: 60ch;
+}
+.page-header .section-label { color: var(--emerald-light); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
+}
+
+.about-grid h2 { margin-bottom: 16px; }
+.about-grid p { color: var(--steel); margin-bottom: 16px; }
+
+.values-list { display: flex; flex-direction: column; gap: 24px; }
+.value-item {
+  border-left: 3px solid var(--emerald);
+  padding-left: 18px;
+}
+.value-item h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.value-item p { color: var(--steel); font-size: 0.92rem; }
+
+@media (max-width: 800px) {
+  .about-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --navy: #0B1E33;
+  --navy-dark: #071523;
+  --slate: #1F3A5C;
+  --steel: #5A6B7A;
+  --bg: #F5F7FA;
+  --white: #FFFFFF;
+  --emerald: #0E7C61;
+  --emerald-light: #12996F;
+  --text: #1C1F24;
+  --border: #DCE2E8;
+
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+}
+
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section-label {
+  font-size: 0.95rem;
+  color: var(--emerald);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--emerald);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--emerald-light); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.35);
+}
+.btn-outline:hover { border-color: var(--white); }
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--border);
+}
+.btn-outline-dark:hover { border-color: var(--navy); }
+
+:focus-visible {
+  outline: 2px solid var(--emerald);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+.card-surface {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-surface:hover {
+  box-shadow: 0 8px 24px rgba(11, 30, 51, 0.08);
+  transform: translateY(-2px);
+}

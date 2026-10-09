@@ -1,0 +1,43 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.empty-state {
+  color: var(--steel);
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.filter-chip {
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--steel);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-chip:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.filter-chip.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
